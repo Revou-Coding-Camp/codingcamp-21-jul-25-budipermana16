@@ -34,7 +34,7 @@ Features a circular progress bar, attractive empty state, auto dark/light mode, 
 
 1. **Clone or download** this repo:
     ```
-    git clone https://github.com/yourusername/your-repo-name.git
+    git clone [https://github.com/Revou-Coding-Camp/codingcamp-21-jul-25-budipermana16]
     ```
 2. **Open `index.html`** directly in your browser.
 3. No server or build tools needed!
