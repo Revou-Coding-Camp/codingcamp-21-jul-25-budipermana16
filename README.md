@@ -18,18 +18,6 @@ Features a circular progress bar, attractive empty state, auto dark/light mode, 
 
 ---
 
-## 📦 Folder Structure
-.
-├── index.html
-├── css/
-│ └── style.css
-├── js/
-│ └── script.js
-├── README.md
-
-
----
-
 ## 🚀 Getting Started
 
 1. **Clone or download** this repo:
