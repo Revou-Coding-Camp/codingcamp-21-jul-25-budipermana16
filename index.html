@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List - DSesain</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Todo List</h1>
+    <button id="themeBtn" title="Ganti Mode" aria-label="Switch theme">
+      <span id="themeIcon" style="font-size:1.5em;">☀️</span>
+    </button>
+  </header>
+  <section class="summary-area">
+    <div class="circle-progress">
+      <svg viewBox="0 0 38 38">
+        <circle class="bg" cx="19" cy="19" r="16"></circle>
+        <circle class="progress" id="circle-progress" cx="19" cy="19" r="16"></circle>
+      </svg>
+      <span id="progress-txt">0%</span>
+    </div>
+    <div class="stat-card"><b id="total">0</b><span>Total</span></div>
+    <div class="stat-card"><b id="completed">0</b><span>Selesai</span></div>
+    <div class="stat-card"><b id="pending">0</b><span>Tersisa</span></div>
+  </section>
+  <div class="divider"></div>
+  <main>
+    <div class="input-bar">
+      <input type="text" id="todo-input" maxlength="55" placeholder="Apa yang ingin kamu lakukan hari ini?"/>
+      <input type="date" id="todo-date"/>
+    </div>
+    <div class="input-bar-2">
+      <input type="text" id="search" placeholder="Cari tugas..."/>
+      <select id="filter">
+        <option value="all">Semua</option>
+        <option value="pending">Belum</option>
+        <option value="completed">Selesai</option>
+      </select>
+    </div>
+    <ul id="todo-list" class="todo-list">
+      <!-- Empty state akan dirender via JS -->
+    </ul>
+  </main>
+  <button id="add-btn" class="fab" title="Tambah tugas">＋</button>
+  <div id="modal"></div>
+  <div id="toast"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
